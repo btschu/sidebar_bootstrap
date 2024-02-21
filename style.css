@@ -139,3 +139,23 @@ a.sidebar-link:hover {
     transition: all .2s ease-out;
 }
 
+@media only screen and (max-width: 600px) {
+    .sidebar-item:not(.expand), .sidebar-footer:not(.expand) {
+        display: none;
+    }
+
+    #sidebar:not(.expand) {
+        width: 0;
+        min-width: 0;
+    }
+
+    .toggle-btn:not(.expand) i {
+        font-size: 1.5rem;
+        color: #000;
+    }
+
+    .logo {
+        padding-left: 50px;
+    }
+  }
+
